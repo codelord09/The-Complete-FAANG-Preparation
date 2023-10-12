@@ -157,24 +157,49 @@ Types of Functional Dependency:
 
 **Normal Forms:** 
 - **First Normal Form (1NF) -**
-   -  A given relation is called in First Normal Form (1NF) if each cell of the table contains only an atomic value i.e. if the attribute of every tuple is either single valued or a null value. 
+   -  A given relation is called in First Normal Form (1NF) if each cell of the table contains only an atomic value i.e. if the attribute of every tuple is either single valued or a null value.
+
+     - Every Attribute should contain only one value.
+         A table in its 1NF should satisfy the following conditions :-
+         1) Every column must have a single value and should be atomic.
+         2) Duplicate columns from the same table should be removed.
+         3) Separate tables should be created for each group of related data and each
+            row should be identified with a unique column.
+- solution →
+         1) create multiple tables to avoid this issue
+         2) Create multiple rows
+    
 - **Second Normal Form (2NF) -**
    -  A given relation is called in Second Normal Form (2NF) if and only if 
       - Relation already exists in 1NF. 
       - No partial dependency exists in the relation. 
          - A → B is called a partial dependency if and only if
-         - A is a subset of some candidate key and B is a non-prime attribute. 
+         - A is a subset of some candidate key and B is a non-prime attribute.
+       
+   -  No partial Dependency.
+      No non-Prime attribute should depend upon partial candidate key, it should
+      depend on full candidate key only.
+      candidate Key → minimal key that defines all attributes.
+      prime attribute → any attribute which is part of any candidate key
+           
 - **Third Normal Form (3NF) -**
    -  A given relation is called in Third Normal Form (3NF) if and only if 
       - Relation already exists in 2NF. 
       - No transitive dependency exists for non-prime attributes. 
          - A → B is called a transitive dependency if and only if
-         - A is not a super key and B is a non-prime attribute. 
+         - A is not a super key and B is a non-prime attribute.
+
+   - No Non-prime attribute should depend on another non-prime attribute and
+      the database should be in 2NF.
+
 - **Boyce-Codd Normal Form -**
    -  A given relation is called in BCNF if and only if 
       - Relation already exists in 3NF. 
       - For each non-trivial functional dependency 
          - ‘A → B’, A is a super key of the relation.
+       
+   -  No prime attribute should depend on prime and non-prime attributes.
+
 
 
 ## Transaction: 
