@@ -118,7 +118,16 @@ Types of Functional Dependency:
       - Thus, if RHS of a functional dependency is a subset of LHS, then it is called a trivial functional dependency. 
    - **Non-Trivial Functional Dependencies –** 
       - A functional dependency X → Y is said to be non-trivial if and only if Y ⊄ X. 
-      - Thus, if there exists at least one attribute in the RHS of a functional dependency that is not a part of LHS, then it is called a non-trivial functional dependency. 
+      - Thus, if there exists at least one attribute in the RHS of a functional dependency that is not a part of LHS, then it is called a non-trivial functional dependency.
+      - **Why do we study functional dependencies?**
+      → to do normalization of the database.
+      - **Why do we study normalization?**
+      → to avoid redundancy within the database.
+      - **Why do we avoid redundancy in databases?**
+      → to avoid anomalies in databases like → updation, deletion, insertion.
+      - ** Functional dependencies
+      - Trivial - AB → A, A → A, ABC → A
+      - Non-Trivial - A → B, AB → C
 
 ## Decomposition of a Relation: 
 - The process of breaking up or dividing a single relation into two or more sub relations is called the decomposition of a relation. 
