@@ -119,13 +119,13 @@ Types of Functional Dependency:
    - **Non-Trivial Functional Dependencies –** 
       - A functional dependency X → Y is said to be non-trivial if and only if Y ⊄ X. 
       - Thus, if there exists at least one attribute in the RHS of a functional dependency that is not a part of LHS, then it is called a non-trivial functional dependency.
-      - **Why do we study functional dependencies?**
+   - **Why do we study functional dependencies?**
       → to do normalization of the database.
-      - **Why do we study normalization?**
+   - **Why do we study normalization?**
       → to avoid redundancy within the database.
-      - **Why do we avoid redundancy in databases?**
+   - **Why do we avoid redundancy in databases?**
       → to avoid anomalies in databases like → updation, deletion, insertion.
-      - ** Functional dependencies
+   - Functional dependencies 
       - Trivial - AB → A, A → A, ABC → A
       - Non-Trivial - A → B, AB → C
 
